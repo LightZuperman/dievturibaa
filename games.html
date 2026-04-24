@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sākumlapa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="base">
+        <div class="header">this is a header
+            <button type="button" class="homebutton" onclick='location.href = "home.html"'>Sākums</button>
+            <button type="button" class="glyphbutton" onclick="location.href = 'glyphs.html'">Rakstu un Simboliku nozīme</button>
+            <button type="button" class="gods" onclick="location.href = 'gods.html'">Dievības</button>
+            <button type="button" class="games" onclick="location.href = 'games.html'">Spēles</button>
+            <button type="button" class="about" onclick="location.href = 'about.html'">Par Mums</button>
+            <div class="datumkaste">
+                <p id="datums"></p>
+            </div>
+        </div>
+        <div class="txtbase">Games
+            <div class="gamebase">
+                <div class="gamebox">
+                    Rakstminis
+                    <div class="gamedesc">Uzmini dažādu rakstu nosaukumus pēc raksta izskata!</div>
+                    <button type="button" id="gameplay" onclick="spelulogs()">Spēlēt Tagad!</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">this is a footer</div>
+    </div>
+    <div id="gamedisplay">
+        <div id="gamedisplay-content">
+            <span class="game-close" onclick="gameclose()">&times;</span>
+            <div id="" class="guessimage">
+            </div>
+            <div id="inputbox">
+                <input type="text" class="gameinput">
+                <button type="button" id="gamesubmit" onclick="matchgame()">Pārbaudīt</button>
+                <div id="answerbox"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+body {
+    background-image: url(/images/fons.png);
+    image-rendering: pixelated;
+    background-size: 77vh;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.base {
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: green;
+    border: 4px dashed rgb(0, 0, 0);
+    padding: 0px;
+    width: 60%;
+    background-color: white;
+    overflow: hidden;
+    position:sticky;
+}
+
+.base div {
+    margin: 0 auto;
+}
+.txtbase {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background-image: url(images/wood_background.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 3px 3px;
+    position:relative;
+    border: solid 2px black;
+}
+
+.footer {
+    position:static;
+}
+
+button {
+    height: auto;
+    width: 20%;
+    border: solid 1px blueviolet;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.datumkaste {
+    width:50%;
+}
+#datums {
+    text-align: center;
+}
+
+#gameplay{
+    border-radius: 3px;
+    width:initial;
+}
+
+.gamebase{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 20px 20px 20px;
+    grid-auto-rows: 375px;
+    gap: 50px;
+    width: fit-content;
+    min-height: 100vh;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-position: left top;
+    background-repeat: repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.gamebox {
+    display: grid;
+    gap: 10px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    height: 100%;
+    border: solid 3px black;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    overflow:hidden;
+    text-align: center;
+}
+
+.gamedesc{
+    height: fit-content;
+    width: fit-content;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align:center;
+    color:black;
+    font-weight: bold;
+}
+
+
+#gamedisplay-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    top: 5vh;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40vw; /* Could be more or less, depending on screen size */
+    height:50vh;
+    position: relative;
+}
+
+#gamedisplay{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.game-close {
+    color: #000000;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.glyphbase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 20px 20px 20px;
+    grid-auto-rows: 375px;
+    gap: 50px;
+    width: fit-content;
+    min-height: 100vh;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-position: left top;
+    background-repeat: repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.glyphinfo{
+    display: grid;
+    gap: 10px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    height: 100%;
+    border: solid 3px black;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    overflow:scroll;
+}
+
+.glyphimage{
+    width: 25vh;
+    height: 25vh;
+    border: solid 3px red;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    background-color:rgb(255, 204, 0);
+    text-align:center;
+    color:black;
+    font-weight: bold;
+}
+
+.glyphdesc{
+    border: solid 3px red;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius:6px;
+    padding: 3px;
+}
+
+.guessimage{
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:80px;
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+}
+#inputbox{
+    align-self: center;
+    top:100%;
+    display:flex;
+    flex-direction: row;
+    width:300px;
+    height:fit-content;
+    justify-content: center;
+    column-gap: 1em;
+}
+.gameinput{
+    width:200px;
+    text-align:center;
+    margin: auto;
+    top:1em;
+}
+#gamesubmit{
+    width:auto
+}
+
+#auseklis{
+    background-image: url(images/auseklis.jpg);
+}
+#dievakrusts{
+    background-image: url(images/dievakrusts.jpg);
+}
+
+#janazime{
+    background-image: url(images/janazime.jpg);
+}
+
+#jumis{
+    background-image: url(images/jumis.jpg);
+}
+
+#krustukrusts{
+    background-image: url(images/krustukrusts.jpg);
+}
+
+#laimaszime{
+    background-image: url(images/laimaszime.jpg);
+}
+
+#marasudeni{
+    background-image: url(images/marasudeni.jpg);
+}
+
+#maraszime{
+    background-image: url(images/maraszime.jpg);
+}
+
+#menesskrusts{
+    background-image: url(images/meneskrusts.jpg);
+}
+
+#sauleszime{
+    background-image: url(images/sauleszime.jpg);
+}
+
+#zalktis{
+    background-image: url(images/zalktis.jpg);
+}
+
+#zvaigzneszime{
+    background-image: url(images/zvaigzneszime.jpg);
+}
+h2{
+    text-align: center;
+}
